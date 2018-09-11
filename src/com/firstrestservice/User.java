@@ -3,7 +3,7 @@ package com.firstrestservice;
 import java.io.Serializable;  
 import javax.xml.bind.annotation.XmlElement; 
 import javax.xml.bind.annotation.XmlRootElement; 
-//@XmlRootElement(name = "user") 
+@XmlRootElement(name = "user") 
 
 public class User implements Serializable {  
    private static final long serialVersionUID = 1L; 
@@ -20,21 +20,21 @@ public class User implements Serializable {
    public int getId() { 
       return id; 
    }  
-  //@XmlElement 
+  @XmlElement 
    public void setId(int id) { 
       this.id = id; 
    } 
    public String getName() { 
       return name; 
    } 
-  // @XmlElement
+   @XmlElement
    public void setName(String name) { 
       this.name = name; 
    } 
    public String getProfession() { 
       return profession; 
    } 
-  // @XmlElement 
+   @XmlElement 
    public void setProfession(String profession) { 
       this.profession = profession; 
    }
